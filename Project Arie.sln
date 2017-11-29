@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Blend for Visual Studio 15
 VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{50BF5174-7532-4BDC-84F4-6C31C7085C5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4A744B23-0EE2-48B6-B291-24447DD12C0D}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jagerts.Arie.Windows.Universal.Controls", "Jagerts.Arie.Windows.Universal.Controls\Jagerts.Arie.Windows.Universal.Controls.csproj", "{DFCACAB0-C448-4E0B-BF35-8DFA8526307F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jagerts.Arie.Windows.Classic.Controls", "Jagerts.Arie.Windows.Classic.Controls\Jagerts.Arie.Windows.Classic.Controls.csproj", "{4704DF19-BCDE-4E47-AF65-71ACB057C8E7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jagerts.Arie.Common.Web.Controls", "Jagerts.Arie.Common.Web.Controls\Jagerts.Arie.Common.Web.Controls.csproj", "{C551F4AD-7815-4D06-A820-5334CA40DAD6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{50BF5174-7532-4BDC-84F4-6C31C7085C5C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jagerts.Arie.Common.Web.Test", "Jagerts.Arie.Common.Web.Test\Jagerts.Arie.Common.Web.Test.csproj", "{1FFA14DD-C30F-49AA-B0C6-24FE60CFAE19}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4A744B23-0EE2-48B6-B291-24447DD12C0D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jagerts.Arie.Windows.Classic.Test", "Jagerts.Arie.Windows.Classic.Test\Jagerts.Arie.Windows.Classic.Test.csproj", "{46EA9608-90F7-480D-9FC1-A3C807386E5E}"
 EndProject
