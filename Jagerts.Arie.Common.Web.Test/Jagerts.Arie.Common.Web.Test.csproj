@@ -12,4 +12,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Jagerts.Arie.Common.Web.Controls\Jagerts.Arie.Common.Web.Controls.csproj" />
+    <ProjectReference Include="..\Jagerts.Arie.Standard.Mvvm\Jagerts.Arie.Standard.Mvvm.csproj" />
+  </ItemGroup>
+
 </Project>
