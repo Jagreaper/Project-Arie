@@ -16,13 +16,10 @@ using System.Windows.Shapes;
 namespace Jagerts.Arie.Windows.Classic.Controls
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// A dark theme styled custom button
     /// </summary>
-    public partial class Button : System.Windows.Controls.Button
+    public sealed partial class Button : System.Windows.Controls.Button
     {
-        public Button()
-        {
-            this.InitializeComponent();
-        }
+        public Button() => this.InitializeComponent();
     }
 }

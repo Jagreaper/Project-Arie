@@ -1,0 +1,23 @@
+﻿<Button x:Class="Jagerts.Arie.Windows.Universal.Controls.Button"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="using:Jagerts.Arie.Windows.Universal.Controls">
+    <Button.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources\ButtonColors.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+            <Style x:Key="ArieButtonStyle" TargetType="local:Button">
+                <Setter Property="Background" Value="{ThemeResource ArieButtonMainBackgroundBrush}"/>
+                <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonMainBorderBrush}"/>
+                <Setter Property="Foreground" Value="{ThemeResource ArieButtonMainContentBrush}"/>
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="Padding" Value="10 5"/>
+                <Setter Property="BorderThickness" Value="0 4 0 0"/>
+            </Style>
+
+            <Style TargetType="local:Button" BasedOn="{StaticResource ArieButtonStyle}"/>
+        </ResourceDictionary>
+    </Button.Resources>
+</Button>

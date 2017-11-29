@@ -73,19 +73,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Resources\ButtonColors.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Button.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Resources\ButtonStyle.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resources\ButtonColors.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
