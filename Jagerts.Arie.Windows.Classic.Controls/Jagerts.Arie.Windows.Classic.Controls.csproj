@@ -73,11 +73,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Themes\Theme.xaml">
+    <Page Include="Resources\ButtonColors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ButtonStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jagerts.Arie.Windows.Classic.Test"
         xmlns:controls="clr-namespace:Jagerts.Arie.Windows.Classic.Controls;assembly=Jagerts.Arie.Windows.Classic.Controls"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        mc:Ignorable="d" Background="#FF444444"
+        Title="MainWindow" Height="600" Width="800">
     <Grid Margin="10 10 10 10">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
