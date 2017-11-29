@@ -5,14 +5,14 @@ using System.Runtime.CompilerServices;
 namespace Jagerts.Arie.Standard.Mvvm
 {
     /// <summary>
-    /// Abstract class that defines useable functions for a Model type in the Mvvm pattern
+    /// Abstract class that defines useable functions for a Model type in the Mvvm pattern.
     /// </summary>
     public abstract class ObservableObject : INotifyPropertyChanged
     {
         #region Events
 
         /// <summary>
-        /// An event that flags a property as dirty for the user interface
+        /// Occurs when a property value changes.
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -21,9 +21,9 @@ namespace Jagerts.Arie.Standard.Mvvm
         #region Methods
 
         /// <summary>
-        /// A method that checks to see if a given property exists and then raises a property changed event
+        /// A method that checks to see if a given property exists and then raises a property changed event.
         /// </summary>
-        /// <param name="propertyName">The name of the property that has changed</param>
+        /// <param name="propertyName">The name of the property that has changed.</param>
         public void RaisePropertyChanged([CallerMemberName] string propertyName = null)
         {
             if (propertyName != null)
@@ -33,12 +33,12 @@ namespace Jagerts.Arie.Standard.Mvvm
         }
 
         /// <summary>
-        /// Updates the property to the new values and raises a property changed event
+        /// Updates the property to the new values and raises a property changed event.
         /// </summary>
-        /// <typeparam name="T">Property type</typeparam>
-        /// <param name="property">Reference to property</param>
-        /// <param name="value">Value to update property to</param>
-        /// <param name="propertyName">The name of the property that has changed</param>
+        /// <typeparam name="T">Property type.</typeparam>
+        /// <param name="property">Reference to property.</param>
+        /// <param name="value">Value to update property to.</param>
+        /// <param name="propertyName">The name of the property that has changed.</param>
         public void Set<T>(ref T property, T value, [CallerMemberName] string propertyName = null)
         {
             property = value;
