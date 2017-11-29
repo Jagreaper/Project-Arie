@@ -5,7 +5,7 @@
         <ResourceDictionary Source="ButtonColors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <Style TargetType="{x:Type local:Button}">
+    <Style x:Key="ArieButtonStyle" TargetType="{x:Type local:Button}">
         <Setter Property="Background" Value="{DynamicResource ArieButtonMainBackgroundBrush}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource ArieButtonMainBorderBrush}"/>
         <Setter Property="Foreground" Value="{DynamicResource ArieButtonMainContentBrush}"/>
@@ -44,4 +44,6 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+
+    <Style TargetType="{x:Type local:Button}" BasedOn="{StaticResource ArieButtonStyle}"/>
 </ResourceDictionary>
