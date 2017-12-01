@@ -7,7 +7,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources\ButtonColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            
+
             <Style x:Key="ArieButtonStyle" TargetType="local:Button">
                 <Setter Property="Background" Value="{ThemeResource ArieButtonMainBackgroundBrush}"/>
                 <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonMainBorderBrush}"/>
@@ -15,6 +15,49 @@
                 <Setter Property="FontSize" Value="13"/>
                 <Setter Property="Padding" Value="10 5"/>
                 <Setter Property="BorderThickness" Value="0 4 0 0"/>
+
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="local:Button">
+                            <Grid>
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal"/>
+
+                                        <VisualState x:Name="MouseOver">
+                                            <VisualState.Setters>
+                                                <Setter Property="Background" Value="{ThemeResource ArieButtonHoverBackgroundBrush}"/>
+                                                <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonHoverBorderBrush}"/>
+                                                <Setter Property="Foreground" Value="{ThemeResource ArieButtonHoverContentBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Property="Background" Value="{ThemeResource ArieButtonSelectedBackgroundBrush}"/>
+                                                <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonSelectedBorderBrush}"/>
+                                                <Setter Property="Foreground" Value="{ThemeResource ArieButtonSelectedContentBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+
+                                        <VisualState x:Name="Disabled">
+                                            <VisualState.Setters>
+                                                <Setter Property="Background" Value="{ThemeResource ArieButtonDisabledBackgroundBrush}"/>
+                                                <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonDisabledBorderBrush}"/>
+                                                <Setter Property="Foreground" Value="{ThemeResource ArieButtonDisabledContentBrush}"/>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                                        Padding="{TemplateBinding Padding}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter/>
+                                </Border>
+                            </Grid>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
             </Style>
 
             <Style TargetType="local:Button" BasedOn="{StaticResource ArieButtonStyle}"/>
