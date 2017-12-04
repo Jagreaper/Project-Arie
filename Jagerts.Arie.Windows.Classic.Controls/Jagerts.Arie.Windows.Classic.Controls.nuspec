@@ -6,6 +6,7 @@
     <title>Jagerts.Arie.Windows.Universal.Controls</title>
     <authors>James Grant</authors>
     <owners>James Grant</owners>
+    <licenseUrl>https://github.com/Jagreaper/Project-Arie/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/Jagreaper/Project-Arie</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
