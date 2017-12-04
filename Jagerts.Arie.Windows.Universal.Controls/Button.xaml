@@ -21,11 +21,7 @@
                             <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="CommonStates">
-                                        <VisualState x:Name="Normal">
-                                            <Storyboard>
-                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
-                                            </Storyboard>
-                                        </VisualState>
+                                        <VisualState x:Name="Normal"/>
                                         <VisualState x:Name="PointerOver">
                                             <Storyboard>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
@@ -37,7 +33,6 @@
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
                                                     <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonHoverContentBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
-                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
                                             </Storyboard>
                                         </VisualState>
                                         <VisualState x:Name="Pressed">
@@ -51,7 +46,6 @@
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
                                                     <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedContentBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
-                                                <PointerDownThemeAnimation Storyboard.TargetName="RootGrid"/>
                                             </Storyboard>
                                         </VisualState>
                                         <VisualState x:Name="Disabled">
