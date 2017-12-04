@@ -7,7 +7,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources\ButtonColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-
+            
             <Style x:Key="ArieButtonStyle" TargetType="local:Button">
                 <Setter Property="Background" Value="{ThemeResource ArieButtonMainBackgroundBrush}"/>
                 <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonMainBorderBrush}"/>
@@ -15,45 +15,70 @@
                 <Setter Property="FontSize" Value="13"/>
                 <Setter Property="Padding" Value="10 5"/>
                 <Setter Property="BorderThickness" Value="0 4 0 0"/>
-
                 <Setter Property="Template">
                     <Setter.Value>
-                        <ControlTemplate TargetType="local:Button">
-                            <Grid>
+                        <ControlTemplate TargetType="Button">
+                            <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="CommonStates">
-                                        <VisualState x:Name="Normal"/>
-
-                                        <VisualState x:Name="MouseOver">
-                                            <VisualState.Setters>
-                                                <Setter Property="Background" Value="{ThemeResource ArieButtonHoverBackgroundBrush}"/>
-                                                <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonHoverBorderBrush}"/>
-                                                <Setter Property="Foreground" Value="{ThemeResource ArieButtonHoverContentBrush}"/>
-                                            </VisualState.Setters>
+                                        <VisualState x:Name="Normal">
+                                            <Storyboard>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                            </Storyboard>
                                         </VisualState>
-
+                                        <VisualState x:Name="PointerOver">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedBorderBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonHoverBorderBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonHoverContentBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerUpThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                            </Storyboard>
+                                        </VisualState>
                                         <VisualState x:Name="Pressed">
-                                            <VisualState.Setters>
-                                                <Setter Property="Background" Value="{ThemeResource ArieButtonSelectedBackgroundBrush}"/>
-                                                <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonSelectedBorderBrush}"/>
-                                                <Setter Property="Foreground" Value="{ThemeResource ArieButtonSelectedContentBrush}"/>
-                                            </VisualState.Setters>
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedBackgroundBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedBorderBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedContentBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <PointerDownThemeAnimation Storyboard.TargetName="RootGrid"/>
+                                            </Storyboard>
                                         </VisualState>
-
                                         <VisualState x:Name="Disabled">
-                                            <VisualState.Setters>
-                                                <Setter Property="Background" Value="{ThemeResource ArieButtonDisabledBackgroundBrush}"/>
-                                                <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonDisabledBorderBrush}"/>
-                                                <Setter Property="Foreground" Value="{ThemeResource ArieButtonDisabledContentBrush}"/>
-                                            </VisualState.Setters>
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonDisabledBackgroundBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonDisabledBorderBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonDisabledContentBrush}"/>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
                                         </VisualState>
                                     </VisualStateGroup>
                                 </VisualStateManager.VisualStateGroups>
-
-                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
-                                        Padding="{TemplateBinding Padding}" BorderThickness="{TemplateBinding BorderThickness}">
-                                    <ContentPresenter/>
-                                </Border>
+                                <ContentPresenter x:Name="ContentPresenter"
+                                                  BorderBrush="{TemplateBinding BorderBrush}"
+                                                  BorderThickness="{TemplateBinding BorderThickness}"
+                                                  Content="{TemplateBinding Content}"
+                                                  ContentTransitions="{TemplateBinding ContentTransitions}"
+                                                  ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                  Padding="{TemplateBinding Padding}"
+                                                  HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                  VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                  AutomationProperties.AccessibilityView="Raw"/>
                             </Grid>
                         </ControlTemplate>
                     </Setter.Value>
