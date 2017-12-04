@@ -1,12 +1,13 @@
-﻿using System.Windows;
-using System.Windows.Media;
+﻿using XamlControls = Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Media;
 
-namespace Jagerts.Arie.Windows.Classic.Controls
+namespace Jagerts.Arie.Windows.Universal.Controls
 {
     /// <summary>
     /// A dark theme styled custom button
     /// </summary>
-    public sealed partial class PathButton : System.Windows.Controls.Button
+    public sealed partial class PathButton : XamlControls.Button
     {
         #region Constructor
 

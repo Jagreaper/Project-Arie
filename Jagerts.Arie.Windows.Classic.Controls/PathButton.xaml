@@ -44,11 +44,7 @@
 
                                     <ContentPresenter Grid.Column="1" TextBlock.Foreground="{TemplateBinding Foreground}" Margin="10 0 0 0"
                                                       Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}"
-                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
-                                        <ContentPresenter.RenderTransform>
-                                            <TranslateTransform/>
-                                        </ContentPresenter.RenderTransform>
-                                    </ContentPresenter>
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
                                 </Grid>
                             </Border>
                         </ControlTemplate>

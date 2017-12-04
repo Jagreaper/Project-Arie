@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Globalization;
-using System.Windows.Data;
+using Windows.UI.Xaml.Data;
 
 namespace Jagerts.Arie.Windows.Classic.Controls.Converters
 {
@@ -8,7 +7,7 @@ namespace Jagerts.Arie.Windows.Classic.Controls.Converters
     {
         #region Methods
 
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public object Convert(object value, Type targetType, object parameter, string language)
         {
             if (value is double)
                 return (double)value + 4;
@@ -16,7 +15,7 @@ namespace Jagerts.Arie.Windows.Classic.Controls.Converters
             throw new NotSupportedException();
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
             if (value is double)
                 return (double)value - 4;
