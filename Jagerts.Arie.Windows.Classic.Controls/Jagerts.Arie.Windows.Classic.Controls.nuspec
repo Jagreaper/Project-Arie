@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Jagerts.Arie.Windows.Classic.Controls</id>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
     <title>Jagerts.Arie.Windows.Classic.Controls</title>
     <authors>James Grant</authors>
     <owners>James Grant</owners>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/Jagreaper/Project-Arie</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
-    <releaseNotes>Added Radio and Path Radio Button controls</releaseNotes>
+    <releaseNotes>Rebuilt for Any CPU</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>application app ui interface controls wpf Jagerts Arie Jagerts.Arie.Windows.Classic.Controls</tags>
   </metadata>
