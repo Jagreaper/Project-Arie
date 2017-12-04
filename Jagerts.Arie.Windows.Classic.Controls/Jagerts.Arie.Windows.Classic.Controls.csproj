@@ -49,6 +49,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PathRadioButton.xaml.cs">
+      <DependentUpon>PathRadioButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RadioButton.xaml.cs">
+      <DependentUpon>RadioButton.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converters\PathButtonPathSizeConverter.cs" />
     <Compile Include="PathButton.xaml.cs">
       <DependentUpon>PathButton.xaml</DependentUpon>
@@ -79,6 +85,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="PathRadioButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RadioButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PathButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

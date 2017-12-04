@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Jagerts.Arie.Windows.Universal.Controls</id>
+    <id>Jagerts.Arie.Windows.Classic.Controls</id>
     <version>0.0.1</version>
-    <title>Jagerts.Arie.Windows.Universal.Controls</title>
+    <title>Jagerts.Arie.Windows.Classic.Controls</title>
     <authors>James Grant</authors>
     <owners>James Grant</owners>
     <licenseUrl>https://github.com/Jagreaper/Project-Arie/blob/master/LICENSE.md</licenseUrl>
@@ -11,6 +11,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
     <copyright>Copyright 2017</copyright>
-    <tags>application app ui interface controls wpf</tags>
+    <tags>application app ui interface controls wpf Jagerts Arie Jagerts.Arie.Windows.Classic.Controls</tags>
   </metadata>
+  <files>
+    <file src="bin\Release\*.dll" target="lib\net461" />
+    <file src="bin\Release\*.pdb" target="lib\net461" />
+  </files>
 </package>
