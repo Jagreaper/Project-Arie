@@ -22,6 +22,9 @@ namespace Jagerts.Arie.Windows.Classic.Controls.Converters
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
+            if (value is double)
+                return (double)value - 4;
+
             throw new NotSupportedException();
         }
 
