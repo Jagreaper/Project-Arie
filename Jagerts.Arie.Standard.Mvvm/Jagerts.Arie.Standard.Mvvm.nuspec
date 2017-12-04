@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
-    <id>Jagerts.Arie.Windows.Classic.Controls</id>
-    <version>0.0.2</version>
-    <title>Jagerts.Arie.Windows.Classic.Controls</title>
+    <id>Jagerts.Arie.Standard.Mvvm</id>
+    <version>0.1.0</version>
+    <title>Jagerts.Arie.Standard.Mvvm</title>
     <authors>James Grant</authors>
     <owners>James Grant</owners>
     <licenseUrl>https://github.com/Jagreaper/Project-Arie/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/Jagreaper/Project-Arie</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
-    <releaseNotes>Added Radio and Path Radio Button controls</releaseNotes>
+    <releaseNotes>First Release</releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>application app ui interface controls wpf Jagerts Arie Jagerts.Arie.Windows.Classic.Controls</tags>
+    <tags>application app Mvvm Model-view-viewmodel standard Jagerts Arie Jagerts.Arie.Standard.Mvvm</tags>
   </metadata>
 </package>

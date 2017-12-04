@@ -12,4 +12,5 @@
     <SolidColorBrush x:Key="ArieButtonDisabledBackgroundBrush">#FF555555</SolidColorBrush>
     <SolidColorBrush x:Key="ArieButtonDisabledBorderBrush">#FF444444</SolidColorBrush>
     <SolidColorBrush x:Key="ArieButtonDisabledContentBrush">#7FFFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieButtonRadioBorderBrush">#FFBBBBBB</SolidColorBrush>
 </ResourceDictionary>
