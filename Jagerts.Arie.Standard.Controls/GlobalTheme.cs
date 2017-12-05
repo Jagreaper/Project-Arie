@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Jagerts.Arie.Standard.Mvvm;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Jagerts.Arie.Standard.Controls
 {
-    public class GlobalTheme : Theme
+    public class GlobalTheme : ObservableObject
     {
         #region Fields
 
@@ -18,15 +19,6 @@ namespace Jagerts.Arie.Standard.Controls
         {
             get => this.buttonTheme;
             set => this.Set(ref this.buttonTheme, value);
-        }
-
-        #endregion
-
-        #region Methods
-
-        public override void Apply()
-        {
-            this.ButtonTheme.Apply();
         }
 
         #endregion

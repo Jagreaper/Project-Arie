@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Jagerts.Arie.Standard.Mvvm;
+using System;
 using System.Drawing;
 
 namespace Jagerts.Arie.Standard.Controls
 {
-    public abstract class ButtonTheme : Theme
+    public class ButtonTheme : ObservableObject
     {
         #region Fields
 

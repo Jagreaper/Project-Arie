@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Globalization;
-using System.Windows.Data;
-using System.Windows.Media;
+using Windows.UI;
+using Windows.UI.Xaml.Data;
+using Windows.UI.Xaml.Media;
 
 namespace Jagerts.Arie.Windows.Classic.Controls.Converters
 {
@@ -9,7 +9,7 @@ namespace Jagerts.Arie.Windows.Classic.Controls.Converters
     {
         #region Methods
 
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        public object Convert(object value, Type targetType, object parameter, string language)
         {
             if (value is System.Drawing.Color dColor)
                 return new SolidColorBrush(Color.FromArgb(dColor.A, dColor.R, dColor.G, dColor.B));
@@ -20,9 +20,9 @@ namespace Jagerts.Arie.Windows.Classic.Controls.Converters
             throw new NotSupportedException();
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        public object ConvertBack(object value, Type targetType, object parameter, string language)
         {
-            throw new NotSupportedException();
+            throw new NotImplementedException();
         }
 
         #endregion

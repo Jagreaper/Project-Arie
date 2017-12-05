@@ -106,6 +106,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Converters\DrawingColorBrushConverter.cs" />
     <Compile Include="Converters\PathButtonPathSizeConverter.cs" />
     <Compile Include="PathButton.xaml.cs">
       <DependentUpon>PathButton.xaml</DependentUpon>
@@ -114,6 +115,7 @@
       <DependentUpon>Button.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeExtensions.cs" />
     <EmbeddedResource Include="Properties\Jagerts.Arie.Windows.Universal.Controls.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +136,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jagerts.Arie.Standard.Controls\Jagerts.Arie.Standard.Controls.csproj">
+      <Project>{fc6938bc-57bc-454d-83d5-267d12e65e33}</Project>
+      <Name>Jagerts.Arie.Standard.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Jagerts.Arie.Standard.Mvvm\Jagerts.Arie.Standard.Mvvm.csproj">
+      <Project>{fcedf8bd-df88-4894-a1d3-d8bf4ceb5954}</Project>
+      <Name>Jagerts.Arie.Standard.Mvvm</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

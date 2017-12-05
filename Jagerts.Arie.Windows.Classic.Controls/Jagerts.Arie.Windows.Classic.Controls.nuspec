@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>Jagerts.Arie.Windows.Classic.Controls</id>
-    <version>0.0.3</version>
+    <version>0.0.6</version>
     <title>Jagerts.Arie.Windows.Classic.Controls</title>
     <authors>James Grant</authors>
     <owners>James Grant</owners>
@@ -10,8 +10,15 @@
     <projectUrl>https://github.com/Jagreaper/Project-Arie</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
-    <releaseNotes>Rebuilt for Any CPU</releaseNotes>
+    <releaseNotes>Added Dependency information</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>application app ui interface controls wpf Jagerts Arie Jagerts.Arie.Windows.Classic.Controls</tags>
+    
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Jagerts.Arie.Standard.Controls" version="0.0.1"/>
+        <dependency id="Jagerts.Arie.Standard.Mvvm" version="0.1.0"/>
+      </group>
+    </dependencies>
   </metadata>
 </package>
