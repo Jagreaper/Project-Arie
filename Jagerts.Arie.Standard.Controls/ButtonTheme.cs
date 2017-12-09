@@ -56,8 +56,8 @@ namespace Jagerts.Arie.Standard.Controls
 
         public Color ArieButtonMainContentBrush
         {
-            get => this.arieButtonMainBorderBrush;
-            set => this.Set(ref this.arieButtonMainBorderBrush, value);
+            get => this.arieButtonMainContentBrush;
+            set => this.Set(ref this.arieButtonMainContentBrush, value);
         }
         
         public Color ArieButtonHoverBackgroundBrush

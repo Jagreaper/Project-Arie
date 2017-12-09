@@ -49,6 +49,12 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ToggleButton.xaml.cs">
+      <DependentUpon>ToggleButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ComboBox.xaml.cs">
+      <DependentUpon>ComboBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Converters\DrawingColorBrushConverter.cs" />
     <Compile Include="PathRadioButton.xaml.cs">
       <DependentUpon>PathRadioButton.xaml</DependentUpon>
@@ -88,6 +94,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ToggleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="PathRadioButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
