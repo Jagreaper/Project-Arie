@@ -8,7 +8,7 @@
                 <ResourceDictionary Source="Resources\GlobalColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <Style x:Key="ArieComboBoxItemStyle" TargetType="{x:Type local:ComboBoxItem}">
+            <Style x:Key="{x:Type local:ComboBoxItem}" TargetType="{x:Type local:ComboBoxItem}">
                 <Setter Property="Background" Value="{DynamicResource ArieMainBackgroundBrush}"/>
                 <Setter Property="BorderBrush" Value="{DynamicResource ArieMainBorderBrush}"/>
                 <Setter Property="Foreground" Value="{DynamicResource ArieMainContentBrush}"/>
@@ -47,8 +47,6 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
-            <Style TargetType="{x:Type local:ComboBoxItem}" BasedOn="{StaticResource ArieComboBoxItemStyle}"/>
         </ResourceDictionary>
     </ComboBoxItem.Resources>
 </ComboBoxItem>

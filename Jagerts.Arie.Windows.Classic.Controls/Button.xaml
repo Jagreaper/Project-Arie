@@ -8,7 +8,7 @@
                 <ResourceDictionary Source="Resources\GlobalColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <Style x:Key="ArieButtonStyle" TargetType="{x:Type local:Button}">
+            <Style x:Key="{x:Type local:Button}" TargetType="{x:Type local:Button}">
                 <Setter Property="Background" Value="{DynamicResource ArieMainBackgroundBrush}"/>
                 <Setter Property="BorderBrush" Value="{DynamicResource ArieMainBorderBrush}"/>
                 <Setter Property="Foreground" Value="{DynamicResource ArieMainContentBrush}"/>
@@ -47,8 +47,6 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
-            <Style TargetType="{x:Type local:Button}" BasedOn="{StaticResource ArieButtonStyle}"/>
         </ResourceDictionary>
     </Button.Resources>
 </Button>

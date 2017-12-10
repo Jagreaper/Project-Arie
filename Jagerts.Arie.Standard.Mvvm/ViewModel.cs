@@ -3,10 +3,22 @@
 namespace Jagerts.Arie.Standard.Mvvm
 {
     /// <summary>
-    /// Abstract class that defines useable functions for a View Model type in the Mvvm pattern
+    /// Abstract class that defines useable functions for a View Model type in the Mvvm pattern.
     /// </summary>
     public abstract class ViewModel : ObservableObject
     {
+        #region Constructor
+
+        public ViewModel() => this.OnLoad(this, EventArgs.Empty);
+
+        ~ViewModel()
+        {
+            this.OnClosing(this, EventArgs.Empty);
+            this.OnClose(this, EventArgs.Empty);
+        }
+
+        #endregion
+
         #region Events
 
         /// <summary>

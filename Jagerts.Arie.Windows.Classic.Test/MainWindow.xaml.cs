@@ -20,9 +20,6 @@ namespace Jagerts.Arie.Windows.Classic.Test
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+        public MainWindow() => this.InitializeComponent();
     }
 }

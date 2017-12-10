@@ -11,18 +11,21 @@
 
             <converters:PathButtonPathSizeConverter x:Key="PathButtonPathSizeConverter"/>
 
-            <Style x:Key="AriePathRadioButtonPathStyle" TargetType="{x:Type Path}">
-                <Setter Property="Stretch" Value="Uniform"/>
-            </Style>
-
-            <Style x:Key="AriePathRadioButtonStyle" TargetType="{x:Type local:PathRadioButton}">
+            <Style x:Key="{x:Type local:PathRadioButton}" TargetType="{x:Type local:PathRadioButton}">
                 <Setter Property="Background" Value="{DynamicResource ArieMainBackgroundBrush}"/>
                 <Setter Property="BorderBrush" Value="{DynamicResource ArieMainBorderBrush}"/>
                 <Setter Property="Foreground" Value="{DynamicResource ArieMainContentBrush}"/>
-                <Setter Property="PathStyle" Value="{StaticResource AriePathRadioButtonPathStyle}"/>
                 <Setter Property="FontSize" Value="13"/>
                 <Setter Property="Padding" Value="10 7"/>
                 <Setter Property="BorderThickness" Value="0 4 0 0"/>
+
+                <Setter Property="PathStyle">
+                    <Setter.Value>
+                        <Style TargetType="{x:Type Path}">
+                            <Setter Property="Stretch" Value="Uniform"/>
+                        </Style>
+                    </Setter.Value>
+                </Setter>
 
                 <Setter Property="Template">
                     <Setter.Value>
@@ -75,8 +78,6 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
-            <Style TargetType="{x:Type local:PathRadioButton}" BasedOn="{StaticResource AriePathRadioButtonStyle}"/>
         </ResourceDictionary>
     </RadioButton.Resources>
 </RadioButton>

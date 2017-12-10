@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jagerts.Arie.Standard.Mvvm"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jagerts.Arie.Standard.Controls", "Jagerts.Arie.Standard.Controls\Jagerts.Arie.Standard.Controls.csproj", "{FC6938BC-57BC-454D-83D5-267D12E65E33}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{E644D856-043D-40F7-96DD-D3950120D214}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mvvm", "Mvvm", "{E644D856-043D-40F7-96DD-D3950120D214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

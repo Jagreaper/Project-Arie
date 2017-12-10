@@ -8,7 +8,7 @@
                 <ResourceDictionary Source="Resources\GlobalColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
-            <Style x:Key="ArieRadioButtonStyle" TargetType="{x:Type local:RadioButton}">
+            <Style x:Key="{x:Type local:RadioButton}" TargetType="{x:Type local:RadioButton}">
                 <Setter Property="Background" Value="{DynamicResource ArieMainBackgroundBrush}"/>
                 <Setter Property="BorderBrush" Value="{DynamicResource ArieMainBorderBrush}"/>
                 <Setter Property="Foreground" Value="{DynamicResource ArieMainContentBrush}"/>
@@ -45,14 +45,12 @@
                         <Setter Property="BorderBrush" Value="{DynamicResource ArieDisabledBorderBrush}"/>
                         <Setter Property="Foreground" Value="{DynamicResource ArieDisabledContentBrush}"/>
                     </Trigger>
-                    
+
                     <Trigger Property="IsChecked" Value="True">
                         <Setter Property="BorderBrush" Value="{DynamicResource ArieCheckedBorderBrush}"/>
                     </Trigger>
                 </Style.Triggers>
             </Style>
-
-            <Style TargetType="{x:Type local:RadioButton}" BasedOn="{StaticResource ArieRadioButtonStyle}"/>
         </ResourceDictionary>
     </RadioButton.Resources>
 </RadioButton>
