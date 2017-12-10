@@ -4,7 +4,7 @@ using System.Windows.Media;
 namespace Jagerts.Arie.Windows.Classic.Controls
 {
     /// <summary>
-    /// A dark theme styled custom button
+    /// A dark theme styled custom toggle button
     /// </summary>
     public sealed partial class ToggleButton : System.Windows.Controls.Primitives.ToggleButton
     {

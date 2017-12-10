@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{50BF5174-7532-4BDC-84F4-6C31C7085C5C}"
 EndProject
@@ -21,7 +21,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jagerts.Arie.Windows.Univer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jagerts.Arie.Standard.Mvvm", "Jagerts.Arie.Standard.Mvvm\Jagerts.Arie.Standard.Mvvm.csproj", "{FCEDF8BD-DF88-4894-A1D3-D8BF4CEB5954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jagerts.Arie.Standard.Controls", "Jagerts.Arie.Standard.Controls\Jagerts.Arie.Standard.Controls.csproj", "{FC6938BC-57BC-454D-83D5-267D12E65E33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jagerts.Arie.Standard.Controls", "Jagerts.Arie.Standard.Controls\Jagerts.Arie.Standard.Controls.csproj", "{FC6938BC-57BC-454D-83D5-267D12E65E33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{E644D856-043D-40F7-96DD-D3950120D214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -178,6 +180,8 @@ Global
 		{1FFA14DD-C30F-49AA-B0C6-24FE60CFAE19} = {4A744B23-0EE2-48B6-B291-24447DD12C0D}
 		{46EA9608-90F7-480D-9FC1-A3C807386E5E} = {4A744B23-0EE2-48B6-B291-24447DD12C0D}
 		{6D87B093-A67A-4BF8-96CE-3747A3D7F9B4} = {4A744B23-0EE2-48B6-B291-24447DD12C0D}
+		{FCEDF8BD-DF88-4894-A1D3-D8BF4CEB5954} = {E644D856-043D-40F7-96DD-D3950120D214}
+		{FC6938BC-57BC-454D-83D5-267D12E65E33} = {50BF5174-7532-4BDC-84F4-6C31C7085C5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B6EE2BE-07A9-4A1B-9EF9-77CAFBEB23EB}
