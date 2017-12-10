@@ -51,7 +51,7 @@
                 <controls:PathRadioButton Content="Arie Path Radio Button 4" PathData="{StaticResource HomePath}"/>
             </StackPanel>
 
-            <StackPanel Grid.Column="4" VerticalAlignment="Bottom" Margin="5 0 0 0">
+            <StackPanel Grid.Column="4" VerticalAlignment="Bottom" Margin="5 0 5 0">
                 <controls:ComboBox>
                     <controls:ComboBox.Items>
                         <controls:ComboBoxItem>Item 1</controls:ComboBoxItem>
