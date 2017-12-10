@@ -49,6 +49,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComboBoxItem.xaml.cs">
+      <DependentUpon>ComboBoxItem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ToggleButton.xaml.cs">
       <DependentUpon>ToggleButton.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="ComboBoxItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ToggleButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
