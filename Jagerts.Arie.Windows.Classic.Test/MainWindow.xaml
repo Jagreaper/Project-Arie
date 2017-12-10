@@ -52,14 +52,7 @@
             </StackPanel>
 
             <StackPanel Grid.Column="4" VerticalAlignment="Bottom" Margin="5 0 5 0">
-                <controls:ComboBox>
-                    <controls:ComboBox.Items>
-                        <ComboBoxItem>Item 1</ComboBoxItem>
-                        <ComboBoxItem>Item 2</ComboBoxItem>
-                        <ComboBoxItem>Item 3</ComboBoxItem>
-                        <ComboBoxItem>Item 4</ComboBoxItem>
-                    </controls:ComboBox.Items>
-                </controls:ComboBox>
+                <controls:ComboBox ItemsSource="{Binding TestItems}"/>
             </StackPanel>
 
             <StackPanel Grid.Column="5" VerticalAlignment="Bottom" Margin="5 0 0 0">

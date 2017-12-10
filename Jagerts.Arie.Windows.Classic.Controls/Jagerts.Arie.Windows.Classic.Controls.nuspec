@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Jagerts.Arie.Windows.Classic.Controls</id>
-    <version>0.0.9</version>
+    <version>0.0.10</version>
     <title>Jagerts.Arie.Windows.Classic.Controls</title>
     <authors>James Grant</authors>
     <owners>James Grant</owners>
@@ -11,8 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
     <releaseNotes>
-      Fixed ComboBoxItem content not being added to ComboBox with a built in type converter that converts System ComboBoxItems
-      to Arie ComboBoxItems for the Arie ComboBox
+      Replaced old system with custom ItemContainerStyle for Arie ComboBox to fix all related container errors
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>application app ui interface controls wpf Jagerts Arie Jagerts.Arie.Windows.Classic.Controls</tags>

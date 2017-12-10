@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jagerts.Arie.Windows.Classic.Test.Viewmodels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,10 @@ namespace Jagerts.Arie.Windows.Classic.Test
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow() => this.InitializeComponent();
+        public MainWindow()
+        {
+            this.InitializeComponent();
+            this.DataContext = new MainViewModel();
+        }
     }
 }
