@@ -5,13 +5,13 @@
     <Button.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources\ButtonColors.xaml"/>
+                <ResourceDictionary Source="Resources\GlobalColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
             <Style x:Key="ArieButtonStyle" TargetType="local:Button">
-                <Setter Property="Background" Value="{ThemeResource ArieButtonMainBackgroundBrush}"/>
-                <Setter Property="BorderBrush" Value="{ThemeResource ArieButtonMainBorderBrush}"/>
-                <Setter Property="Foreground" Value="{ThemeResource ArieButtonMainContentBrush}"/>
+                <Setter Property="Background" Value="{ThemeResource ArieMainBackgroundBrush}"/>
+                <Setter Property="BorderBrush" Value="{ThemeResource ArieMainBorderBrush}"/>
+                <Setter Property="Foreground" Value="{ThemeResource ArieMainContentBrush}"/>
                 <Setter Property="FontSize" Value="13"/>
                 <Setter Property="Padding" Value="10 5"/>
                 <Setter Property="BorderThickness" Value="0 4 0 0"/>
@@ -25,39 +25,39 @@
                                         <VisualState x:Name="PointerOver">
                                             <Storyboard>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedBorderBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieHoverBackgroundBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonHoverBorderBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieHoverBorderBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonHoverContentBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieHoverContentBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                             </Storyboard>
                                         </VisualState>
                                         <VisualState x:Name="Pressed">
                                             <Storyboard>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedBackgroundBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieSelectedBackgroundBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedBorderBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieSelectedBorderBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonSelectedContentBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieSelectedContentBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                             </Storyboard>
                                         </VisualState>
                                         <VisualState x:Name="Disabled">
                                             <Storyboard>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="RootGrid" Storyboard.TargetProperty="Background">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonDisabledBackgroundBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieDisabledBackgroundBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="BorderBrush">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonDisabledBorderBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieDisabledBorderBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                                 <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ContentPresenter" Storyboard.TargetProperty="Foreground">
-                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieButtonDisabledContentBrush}"/>
+                                                    <DiscreteObjectKeyFrame KeyTime="0" Value="{ThemeResource ArieDisabledContentBrush}"/>
                                                 </ObjectAnimationUsingKeyFrames>
                                             </Storyboard>
                                         </VisualState>

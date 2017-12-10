@@ -15,32 +15,27 @@ namespace Jagerts.Arie.Standard.Controls
 
         #region Methods
 
-        private static object ConvertFromColor(object color) => ThemeExtensions.DrawingColorBrushConverter.Convert(color, typeof(SolidColorBrush), null, CultureInfo.CurrentCulture);
-
-        public static void Apply(this ButtonTheme host)
-        {
-            Application.Current.Resources["ArieButtonMainBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonMainBackgroundBrush);
-            Application.Current.Resources["ArieButtonMainBorderBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonMainBorderBrush);
-            Application.Current.Resources["ArieButtonMainContentBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonMainContentBrush);
-
-            Application.Current.Resources["ArieButtonHoverBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonHoverBackgroundBrush);
-            Application.Current.Resources["ArieButtonHoverBorderBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonHoverBorderBrush);
-            Application.Current.Resources["ArieButtonHoverContentBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonHoverContentBrush);
-
-            Application.Current.Resources["ArieButtonSelectedBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonSelectedBackgroundBrush);
-            Application.Current.Resources["ArieButtonSelectedBorderBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonSelectedBorderBrush);
-            Application.Current.Resources["ArieButtonSelectedContentBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonSelectedContentBrush);
-
-            Application.Current.Resources["ArieButtonDisabledBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonDisabledBackgroundBrush);
-            Application.Current.Resources["ArieButtonDisabledBorderBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonDisabledBorderBrush);
-            Application.Current.Resources["ArieButtonDisabledContentBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonDisabledContentBrush);
-
-            Application.Current.Resources["ArieButtonRadioBorderBrush"] = ThemeExtensions.ConvertFromColor(host.ArieButtonRadioBorderBrush);
-        }
+        private static object ConvertFromColor(object color) => ThemeExtensions.DrawingColorBrushConverter.Convert(color, typeof(SolidColorBrush), null, null);
 
         public static void Apply(this GlobalTheme host)
         {
-            host.ButtonTheme.Apply();
+            Application.Current.Resources["ArieMainBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.MainBackgroundBrush);
+            Application.Current.Resources["ArieMainBorderBrush"] = ThemeExtensions.ConvertFromColor(host.MainBorderBrush);
+            Application.Current.Resources["ArieMainContentBrush"] = ThemeExtensions.ConvertFromColor(host.MainContentBrush);
+
+            Application.Current.Resources["ArieHoverBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.HoverBackgroundBrush);
+            Application.Current.Resources["ArieHoverBorderBrush"] = ThemeExtensions.ConvertFromColor(host.HoverBorderBrush);
+            Application.Current.Resources["ArieHoverContentBrush"] = ThemeExtensions.ConvertFromColor(host.HoverContentBrush);
+
+            Application.Current.Resources["ArieSelectedBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.SelectedBackgroundBrush);
+            Application.Current.Resources["ArieSelectedBorderBrush"] = ThemeExtensions.ConvertFromColor(host.SelectedBorderBrush);
+            Application.Current.Resources["ArieSelectedContentBrush"] = ThemeExtensions.ConvertFromColor(host.SelectedContentBrush);
+
+            Application.Current.Resources["ArieDisabledBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.DisabledBackgroundBrush);
+            Application.Current.Resources["ArieDisabledBorderBrush"] = ThemeExtensions.ConvertFromColor(host.DisabledBorderBrush);
+            Application.Current.Resources["ArieDisabledContentBrush"] = ThemeExtensions.ConvertFromColor(host.DisabledContentBrush);
+
+            Application.Current.Resources["ArieCheckedBorderBrush"] = ThemeExtensions.ConvertFromColor(host.CheckedBorderBrush);
         }
 
         #endregion

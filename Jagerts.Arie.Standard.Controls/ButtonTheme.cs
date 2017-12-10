@@ -8,117 +8,117 @@ namespace Jagerts.Arie.Standard.Controls
     {
         #region Fields
 
-        private Color arieButtonMainBackgroundBrush;
+        private Color mainBackgroundBrush;
 
-        private Color arieButtonMainBorderBrush;
+        private Color mainBorderBrush;
 
-        private Color arieButtonMainContentBrush;
-
-
-        private Color arieButtonHoverBackgroundBrush;
-
-        private Color arieButtonHoverBorderBrush;
-
-        private Color arieButtonHoverContentBrush;
+        private Color mainContentBrush;
 
 
-        private Color arieButtonSelectedBackgroundBrush;
+        private Color hoverBackgroundBrush;
 
-        private Color arieButtonSelectedBorderBrush;
+        private Color hoverBorderBrush;
 
-        private Color arieButtonSelectedContentBrush;
-
-
-        private Color arieButtonDisabledBackgroundBrush;
-
-        private Color arieButtonDisabledBorderBrush;
-
-        private Color arieButtonDisabledContentBrush;
+        private Color hoverContentBrush;
 
 
-        private Color arieButtonRadioBorderBrush;
+        private Color selectedBackgroundBrush;
+
+        private Color selectedBorderBrush;
+
+        private Color selectedContentBrush;
+
+
+        private Color disabledBackgroundBrush;
+
+        private Color disabledBorderBrush;
+
+        private Color disabledContentBrush;
+
+
+        private Color checkedBorderBrush;
 
         #endregion
 
         #region Properties
 
-        public Color ArieButtonMainBackgroundBrush
+        public Color MainBackgroundBrush
         {
-            get => this.arieButtonMainBackgroundBrush;
-            set => this.Set(ref this.arieButtonMainBackgroundBrush, value);
+            get => this.mainBackgroundBrush;
+            set => this.Set(ref this.mainBackgroundBrush, value);
         }
 
-        public Color ArieButtonMainBorderBrush
+        public Color MainBorderBrush
         {
-            get => this.arieButtonMainBorderBrush;
-            set => this.Set(ref this.arieButtonMainBorderBrush, value);
+            get => this.mainBorderBrush;
+            set => this.Set(ref this.mainBorderBrush, value);
         }
 
-        public Color ArieButtonMainContentBrush
+        public Color MainContentBrush
         {
-            get => this.arieButtonMainContentBrush;
-            set => this.Set(ref this.arieButtonMainContentBrush, value);
+            get => this.mainContentBrush;
+            set => this.Set(ref this.mainContentBrush, value);
         }
         
-        public Color ArieButtonHoverBackgroundBrush
+        public Color HoverBackgroundBrush
         {
-            get => this.arieButtonHoverBackgroundBrush;
-            set => this.Set(ref this.arieButtonHoverBackgroundBrush, value);
+            get => this.hoverBackgroundBrush;
+            set => this.Set(ref this.hoverBackgroundBrush, value);
         }
 
-        public Color ArieButtonHoverBorderBrush
+        public Color HoverBorderBrush
         {
-            get => this.arieButtonHoverBorderBrush;
-            set => this.Set(ref this.arieButtonHoverBorderBrush, value);
+            get => this.hoverBorderBrush;
+            set => this.Set(ref this.hoverBorderBrush, value);
         }
 
-        public Color ArieButtonHoverContentBrush
+        public Color HoverContentBrush
         {
-            get => this.arieButtonHoverContentBrush;
-            set => this.Set(ref this.arieButtonHoverContentBrush, value);
+            get => this.hoverContentBrush;
+            set => this.Set(ref this.hoverContentBrush, value);
         }
         
-        public Color ArieButtonSelectedBackgroundBrush
+        public Color SelectedBackgroundBrush
         {
-            get => this.arieButtonSelectedBackgroundBrush;
-            set => this.Set(ref this.arieButtonSelectedBackgroundBrush, value);
+            get => this.selectedBackgroundBrush;
+            set => this.Set(ref this.selectedBackgroundBrush, value);
         }
 
-        public Color ArieButtonSelectedBorderBrush
+        public Color SelectedBorderBrush
         {
-            get => this.arieButtonSelectedBorderBrush;
-            set => this.Set(ref this.arieButtonSelectedBorderBrush, value);
+            get => this.selectedBorderBrush;
+            set => this.Set(ref this.selectedBorderBrush, value);
         }
 
-        public Color ArieButtonSelectedContentBrush
+        public Color SelectedContentBrush
         {
-            get => this.arieButtonSelectedContentBrush;
-            set => this.Set(ref this.arieButtonSelectedContentBrush, value);
+            get => this.selectedContentBrush;
+            set => this.Set(ref this.selectedContentBrush, value);
         }
 
 
-        public Color ArieButtonDisabledBackgroundBrush
+        public Color DisabledBackgroundBrush
         {
-            get => this.arieButtonDisabledBackgroundBrush;
-            set => this.Set(ref this.arieButtonDisabledBackgroundBrush, value);
+            get => this.disabledBackgroundBrush;
+            set => this.Set(ref this.disabledBackgroundBrush, value);
         }
 
-        public Color ArieButtonDisabledBorderBrush
+        public Color DisabledBorderBrush
         {
-            get => this.arieButtonDisabledBorderBrush;
-            set => this.Set(ref this.arieButtonDisabledBorderBrush, value);
+            get => this.disabledBorderBrush;
+            set => this.Set(ref this.disabledBorderBrush, value);
         }
 
-        public Color ArieButtonDisabledContentBrush
+        public Color DisabledContentBrush
         {
-            get => this.arieButtonDisabledContentBrush;
-            set => this.Set(ref this.arieButtonDisabledContentBrush, value);
+            get => this.disabledContentBrush;
+            set => this.Set(ref this.disabledContentBrush, value);
         }
         
-        public Color ArieButtonRadioBorderBrush
+        public Color CheckedBorderBrush
         {
-            get => this.arieButtonRadioBorderBrush;
-            set => this.Set(ref this.arieButtonRadioBorderBrush, value);
+            get => this.checkedBorderBrush;
+            set => this.Set(ref this.checkedBorderBrush, value);
         }
 
         #endregion

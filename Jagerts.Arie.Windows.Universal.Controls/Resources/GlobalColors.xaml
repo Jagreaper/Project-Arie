@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="ArieMainBackgroundBrush">#FF666666</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieMainBorderBrush">#FF555555</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieMainContentBrush">#FFFFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieHoverBackgroundBrush">#FF777777</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieHoverBorderBrush">#FF666666</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieHoverContentBrush">#FFFFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieSelectedBackgroundBrush">#FF888888</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieSelectedBorderBrush">#FF777777</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieSelectedContentBrush">#FFFFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieDisabledBackgroundBrush">#FF555555</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieDisabledBorderBrush">#FF444444</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieDisabledContentBrush">#7FFFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieCheckedBorderBrush">#FFBBBBBB</SolidColorBrush>
+</ResourceDictionary>

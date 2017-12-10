@@ -5,13 +5,13 @@
     <Button.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources\ButtonColors.xaml"/>
+                <ResourceDictionary Source="Resources\GlobalColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <Style x:Key="ArieButtonStyle" TargetType="{x:Type local:Button}">
-                <Setter Property="Background" Value="{DynamicResource ArieButtonMainBackgroundBrush}"/>
-                <Setter Property="BorderBrush" Value="{DynamicResource ArieButtonMainBorderBrush}"/>
-                <Setter Property="Foreground" Value="{DynamicResource ArieButtonMainContentBrush}"/>
+                <Setter Property="Background" Value="{DynamicResource ArieMainBackgroundBrush}"/>
+                <Setter Property="BorderBrush" Value="{DynamicResource ArieMainBorderBrush}"/>
+                <Setter Property="Foreground" Value="{DynamicResource ArieMainContentBrush}"/>
                 <Setter Property="FontSize" Value="13"/>
                 <Setter Property="Padding" Value="10 7"/>
                 <Setter Property="BorderThickness" Value="0 4 0 0"/>
@@ -29,21 +29,21 @@
 
                 <Style.Triggers>
                     <Trigger Property="IsMouseOver" Value="True">
-                        <Setter Property="Background" Value="{DynamicResource ArieButtonHoverBackgroundBrush}"/>
-                        <Setter Property="BorderBrush" Value="{DynamicResource ArieButtonHoverBorderBrush}"/>
-                        <Setter Property="Foreground" Value="{DynamicResource ArieButtonHoverContentBrush}"/>
+                        <Setter Property="Background" Value="{DynamicResource ArieHoverBackgroundBrush}"/>
+                        <Setter Property="BorderBrush" Value="{DynamicResource ArieHoverBorderBrush}"/>
+                        <Setter Property="Foreground" Value="{DynamicResource ArieHoverContentBrush}"/>
                     </Trigger>
 
                     <Trigger Property="IsPressed" Value="True">
-                        <Setter Property="Background" Value="{DynamicResource ArieButtonSelectedBackgroundBrush}"/>
-                        <Setter Property="BorderBrush" Value="{DynamicResource ArieButtonSelectedBorderBrush}"/>
-                        <Setter Property="Foreground" Value="{DynamicResource ArieButtonSelectedContentBrush}"/>
+                        <Setter Property="Background" Value="{DynamicResource ArieSelectedBackgroundBrush}"/>
+                        <Setter Property="BorderBrush" Value="{DynamicResource ArieSelectedBorderBrush}"/>
+                        <Setter Property="Foreground" Value="{DynamicResource ArieSelectedContentBrush}"/>
                     </Trigger>
 
                     <Trigger Property="IsEnabled" Value="False">
-                        <Setter Property="Background" Value="{DynamicResource ArieButtonDisabledBackgroundBrush}"/>
-                        <Setter Property="BorderBrush" Value="{DynamicResource ArieButtonDisabledBorderBrush}"/>
-                        <Setter Property="Foreground" Value="{DynamicResource ArieButtonDisabledContentBrush}"/>
+                        <Setter Property="Background" Value="{DynamicResource ArieDisabledBackgroundBrush}"/>
+                        <Setter Property="BorderBrush" Value="{DynamicResource ArieDisabledBorderBrush}"/>
+                        <Setter Property="Foreground" Value="{DynamicResource ArieDisabledContentBrush}"/>
                     </Trigger>
                 </Style.Triggers>
             </Style>
