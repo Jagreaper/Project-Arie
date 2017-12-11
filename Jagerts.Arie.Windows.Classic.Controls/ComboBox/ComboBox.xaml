@@ -5,7 +5,7 @@
     <ComboBox.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources\GlobalColors.xaml"/>
+                <ResourceDictionary Source="..\Resources\GlobalColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
             <Style x:Key="ArieComboBoxItemStyle" TargetType="{x:Type ComboBoxItem}">

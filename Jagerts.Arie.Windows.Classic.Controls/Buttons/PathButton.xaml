@@ -6,7 +6,7 @@
     <Button.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources\GlobalColors.xaml"/>
+                <ResourceDictionary Source="..\Resources\GlobalColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
 
             <converters:PathButtonPathSizeConverter x:Key="PathButtonPathSizeConverter"/>
