@@ -11,11 +11,6 @@ namespace Jagerts.Arie.Windows.Classic.Test.Viewmodels
 {
     class MainViewModel : ViewModel
     {
-        #region Constructor
-
-        public MainViewModel() => ColorSchemes.ClassicBlue.Apply();
-
-        #endregion
 
         #region Properties
 

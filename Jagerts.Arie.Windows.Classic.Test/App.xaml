@@ -1,9 +1,10 @@
-﻿<Application x:Class="Jagerts.Arie.Windows.Classic.Test.App"
+﻿<controls:Application x:Class="Jagerts.Arie.Windows.Classic.Test.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Jagerts.Arie.Windows.Classic.Test"
+             xmlns:controls="clr-namespace:Jagerts.Arie.Windows.Classic.Controls;assembly=Jagerts.Arie.Windows.Classic.Controls"
              StartupUri="MainWindow.xaml">
-    <Application.Resources>
+    <controls:Application.Resources>
          
-    </Application.Resources>
-</Application>
+    </controls:Application.Resources>
+</controls:Application>

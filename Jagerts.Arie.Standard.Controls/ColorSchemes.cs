@@ -20,6 +20,8 @@ namespace Jagerts.Arie.Standard.Controls
 
         #region Properties
 
+        public static ColorScheme Default => ColorSchemes.ClassicDark;
+
         public static ColorScheme ClassicBlue => ColorSchemes.classicBlue ?? (ColorSchemes.classicBlue = new ClassicBlueColorScheme());
 
         public static ColorScheme ClassicDark => ColorSchemes.classicDark ?? (ColorSchemes.classicDark = new ClassicDarkColorScheme());
