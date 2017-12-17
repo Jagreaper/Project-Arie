@@ -17,7 +17,7 @@ namespace Jagerts.Arie.Standard.Controls
 
         private static object ConvertFromColor(object color) => ThemeExtensions.DrawingColorBrushConverter.Convert(color, typeof(SolidColorBrush), null, null);
 
-        public static void Apply(this GlobalTheme host)
+        public static void Apply(this ColorScheme host)
         {
             Application.Current.Resources["ArieMainBackgroundBrush"] = ThemeExtensions.ConvertFromColor(host.MainBackgroundBrush);
             Application.Current.Resources["ArieMainBorderBrush"] = ThemeExtensions.ConvertFromColor(host.MainBorderBrush);

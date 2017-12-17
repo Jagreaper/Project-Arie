@@ -13,7 +13,7 @@ namespace Jagerts.Arie.Windows.Classic.Test.Viewmodels
     {
         #region Constructor
 
-        public MainViewModel() => GlobalThemes.ClassicBlueTheme.Apply();
+        public MainViewModel() => ColorSchemes.ClassicBlue.Apply();
 
         #endregion
 

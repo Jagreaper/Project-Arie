@@ -3,22 +3,23 @@ using System.Windows.Media;
 
 namespace Jagerts.Arie.Windows.Classic.Controls
 {
-    /// <summary>
-    /// A dark theme styled custom button
-    /// </summary>
-    public sealed partial class PathRadioButton : System.Windows.Controls.RadioButton
+    public class PathRadioButton : RadioButton
     {
         #region Constructor
 
-        public PathRadioButton() => this.InitializeComponent();
+        static PathRadioButton() => DefaultStyleKeyProperty.OverrideMetadata(typeof(PathRadioButton), new FrameworkPropertyMetadata(typeof(PathRadioButton)));
 
         #endregion
 
-        #region Properties
+        #region Fields
 
         public static readonly DependencyProperty PathDataProperty = DependencyProperty.Register("PathData", typeof(Geometry), typeof(PathRadioButton), new PropertyMetadata(null));
 
         public static readonly DependencyProperty PathStyleProperty = DependencyProperty.Register("PathStyle", typeof(Style), typeof(PathRadioButton), new PropertyMetadata(null));
+
+        #endregion
+
+        #region Properties
 
         public Geometry PathData
         {

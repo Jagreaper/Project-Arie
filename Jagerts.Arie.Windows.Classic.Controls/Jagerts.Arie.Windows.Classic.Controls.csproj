@@ -49,26 +49,14 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComboBox\ComboBoxItem.xaml.cs">
-      <DependentUpon>ComboBoxItem.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ComboBox\ToggleButton.xaml.cs">
-      <DependentUpon>ToggleButton.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ComboBox\ComboBox.xaml.cs">
-      <DependentUpon>ComboBox.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Buttons\Button.cs" />
+    <Compile Include="Buttons\PathButton.cs" />
+    <Compile Include="Buttons\PathRadioButton.cs" />
+    <Compile Include="Buttons\RadioButton.cs" />
+    <Compile Include="ComboBox\ComboBox.cs" />
+    <Compile Include="ComboBox\ToggleButton.cs" />
     <Compile Include="Converters\DrawingColorBrushConverter.cs" />
-    <Compile Include="Buttons\PathRadioButton.xaml.cs">
-      <DependentUpon>PathRadioButton.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Buttons\RadioButton.xaml.cs">
-      <DependentUpon>RadioButton.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Converters\PathButtonPathSizeConverter.cs" />
-    <Compile Include="Buttons\PathButton.xaml.cs">
-      <DependentUpon>PathButton.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -82,9 +70,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Buttons\Button.xaml.cs">
-      <DependentUpon>Button.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ThemeExtensions.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,35 +82,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ComboBox\ComboBoxItem.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ComboBox\ToggleButton.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ComboBox\ComboBox.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Buttons\PathRadioButton.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Buttons\RadioButton.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Buttons\PathButton.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Buttons\Button.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Resources\GlobalColors.xaml">
+    <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

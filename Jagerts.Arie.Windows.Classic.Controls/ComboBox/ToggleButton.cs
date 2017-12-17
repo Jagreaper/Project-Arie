@@ -1,24 +1,30 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Media;
 
 namespace Jagerts.Arie.Windows.Classic.Controls
 {
-    /// <summary>
-    /// A dark theme styled custom toggle button
-    /// </summary>
-    public sealed partial class ToggleButton : System.Windows.Controls.Primitives.ToggleButton
+    public class ToggleButton : System.Windows.Controls.Primitives.ToggleButton
     {
         #region Constructor
 
-        public ToggleButton() => this.InitializeComponent();
+        static ToggleButton() => DefaultStyleKeyProperty.OverrideMetadata(typeof(ToggleButton), new FrameworkPropertyMetadata(typeof(ToggleButton)));
 
         #endregion
 
-        #region Properties
+        #region Fields
 
         public static readonly DependencyProperty PathDataProperty = DependencyProperty.Register("PathData", typeof(Geometry), typeof(ToggleButton), new PropertyMetadata(null));
 
         public static readonly DependencyProperty PathStyleProperty = DependencyProperty.Register("PathStyle", typeof(Style), typeof(ToggleButton), new PropertyMetadata(null));
+
+        #endregion
+
+        #region Properties
 
         public Geometry PathData
         {

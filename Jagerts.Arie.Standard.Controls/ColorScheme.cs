@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Jagerts.Arie.Standard.Controls
 {
-    public class GlobalTheme : ObservableObject
+    public class ColorScheme : ObservableObject
     {
         #region Fields
 
