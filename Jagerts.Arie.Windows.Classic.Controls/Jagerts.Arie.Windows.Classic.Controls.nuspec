@@ -11,14 +11,14 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
     <releaseNotes>
-      Replaced old system with custom ItemContainerStyle for Arie ComboBox to fix all related container errors
+      Fixed many issues relating to the implementation of the custom controls to enable extensiability and dynamic theming.
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>application app ui interface controls wpf Jagerts Arie Jagerts.Arie.Windows.Classic.Controls</tags>
     
     <dependencies>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="Jagerts.Arie.Standard.Controls" version="0.0.2"/>
+        <dependency id="Jagerts.Arie.Standard.Controls" version="0.0.3"/>
         <dependency id="Jagerts.Arie.Standard.Mvvm" version="0.1.0"/>
       </group>
     </dependencies>

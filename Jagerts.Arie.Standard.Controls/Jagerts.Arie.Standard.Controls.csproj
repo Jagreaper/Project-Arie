@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Company>James Grant</Company>
     <Authors>James Grant</Authors>
     <PackageLicenseUrl>https://github.com/Jagreaper/Project-Arie/blob/master/LICENSE.md</PackageLicenseUrl>
@@ -11,7 +11,7 @@
     <PackageProjectUrl>https://github.com/Jagreaper/Project-Arie</PackageProjectUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>application app Mvvm Model-view-viewmodel standard ui controls Jagerts Arie Jagerts.Arie.Standard.Controls</PackageTags>
-    <PackageReleaseNotes>Updated Theming System, Breaks 0.0.1 Implementation</PackageReleaseNotes>
+    <PackageReleaseNotes>Remodeled Theming system to the newly name ColorScheme system</PackageReleaseNotes>
     <Copyright>Copyright 2017</Copyright>
     <Description>A .NET Standard 2.0 conforming library of cross platform user interface control code</Description>
   </PropertyGroup>
