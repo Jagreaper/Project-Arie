@@ -1,4 +1,5 @@
-﻿using Jagerts.Arie.Standard.Mvvm;
+﻿using Jagerts.Arie.Standard.Controls;
+using Jagerts.Arie.Standard.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,6 +11,12 @@ namespace Jagerts.Arie.Windows.Classic.Test.Viewmodels
 {
     class MainViewModel : ViewModel
     {
+        #region Constructor
+
+        public MainViewModel() => GlobalThemes.ClassicBlueTheme.Apply();
+
+        #endregion
+
         #region Properties
 
         public ObservableCollection<string> TestItems { get; private set; } = new ObservableCollection<string>()

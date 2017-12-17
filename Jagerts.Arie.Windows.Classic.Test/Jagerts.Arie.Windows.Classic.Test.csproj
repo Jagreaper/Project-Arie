@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Jagerts.Arie.Standard.Controls\Jagerts.Arie.Standard.Controls.csproj">
+      <Project>{FC6938BC-57BC-454D-83D5-267D12E65E33}</Project>
+      <Name>Jagerts.Arie.Standard.Controls</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Jagerts.Arie.Standard.Mvvm\Jagerts.Arie.Standard.Mvvm.csproj">
       <Project>{fcedf8bd-df88-4894-a1d3-d8bf4ceb5954}</Project>
       <Name>Jagerts.Arie.Standard.Mvvm</Name>

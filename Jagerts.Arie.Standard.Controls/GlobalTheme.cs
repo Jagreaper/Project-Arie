@@ -10,6 +10,8 @@ namespace Jagerts.Arie.Standard.Controls
     {
         #region Fields
 
+        private string name;
+
         private Color mainBackgroundBrush;
 
         private Color mainBorderBrush;
@@ -43,6 +45,12 @@ namespace Jagerts.Arie.Standard.Controls
         #endregion
 
         #region Properties
+
+        public string Name
+        {
+            get => this.name;
+            set => this.Set(ref this.name, value);
+        }
 
         public Color MainBackgroundBrush
         {
