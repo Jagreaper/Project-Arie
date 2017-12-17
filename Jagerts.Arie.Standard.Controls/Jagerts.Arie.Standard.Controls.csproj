@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <Company>James Grant</Company>
     <Authors>James Grant</Authors>
     <PackageLicenseUrl>https://github.com/Jagreaper/Project-Arie/blob/master/LICENSE.md</PackageLicenseUrl>
@@ -14,6 +14,8 @@
     <PackageReleaseNotes>Added Default property to ColorSchemes</PackageReleaseNotes>
     <Copyright>Copyright 2017</Copyright>
     <Description>A .NET Standard 2.0 conforming library of cross platform user interface control code</Description>
+    <AssemblyVersion>0.0.5.0</AssemblyVersion>
+    <FileVersion>0.0.5.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
