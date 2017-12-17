@@ -5,6 +5,10 @@
              xmlns:controls="clr-namespace:Jagerts.Arie.Windows.Classic.Controls;assembly=Jagerts.Arie.Windows.Classic.Controls"
              StartupUri="MainWindow.xaml">
     <controls:Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Jagerts.Arie.Windows.Classic.Controls;component/Themes/Generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </controls:Application.Resources>
 </controls:Application>

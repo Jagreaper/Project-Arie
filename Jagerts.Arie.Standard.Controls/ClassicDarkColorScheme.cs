@@ -25,6 +25,7 @@ namespace Jagerts.Arie.Standard.Controls
             this.DisabledBorderBrush = Color.FromArgb(0xFF, 0x44, 0x44, 0x44);
             this.DisabledContentBrush = Color.FromArgb(0x7F, 0xFF, 0xFF, 0xFF);
             this.CheckedBorderBrush = Color.FromArgb(0xFF, 0xBB, 0xBB, 0xBB);
+            this.WindowBackgroundBrush = Color.FromArgb(0xFF, 0x40, 0x40, 0x40);
         }
 
         #endregion

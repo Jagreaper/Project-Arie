@@ -42,6 +42,8 @@ namespace Jagerts.Arie.Standard.Controls
 
         private Color checkedBorderBrush;
 
+        private Color windowBackgroundBrush;
+
         #endregion
 
         #region Properties
@@ -129,6 +131,12 @@ namespace Jagerts.Arie.Standard.Controls
         {
             get => this.checkedBorderBrush;
             set => this.Set(ref this.checkedBorderBrush, value);
+        }
+
+        public Color WindowBackgroundBrush
+        {
+            get => this.windowBackgroundBrush;
+            set => this.Set(ref this.windowBackgroundBrush, value);
         }
 
         #endregion

@@ -36,6 +36,7 @@ namespace Jagerts.Arie.Standard.Controls
             Application.Current.Resources["ArieDisabledContentBrush"] = ColorSchemeExtensions.ConvertFromColor(host.DisabledContentBrush);
 
             Application.Current.Resources["ArieCheckedBorderBrush"] = ColorSchemeExtensions.ConvertFromColor(host.CheckedBorderBrush);
+            Application.Current.Resources["ArieWindowBackgroundBrush"] = ColorSchemeExtensions.ConvertFromColor(host.WindowBackgroundBrush);
         }
 
         #endregion

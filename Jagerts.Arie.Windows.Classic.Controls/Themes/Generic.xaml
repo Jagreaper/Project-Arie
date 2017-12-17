@@ -17,6 +17,7 @@
     <SolidColorBrush x:Key="ArieDisabledBorderBrush">#FF444444</SolidColorBrush>
     <SolidColorBrush x:Key="ArieDisabledContentBrush">#7FFFFFFF</SolidColorBrush>
     <SolidColorBrush x:Key="ArieCheckedBorderBrush">#FFBBBBBB</SolidColorBrush>
+    <SolidColorBrush x:Key="ArieWindowBackgroundBrush">#FF404040</SolidColorBrush>
 
     <converters:PathButtonPathSizeConverter x:Key="PathButtonPathSizeConverter"/>
 
