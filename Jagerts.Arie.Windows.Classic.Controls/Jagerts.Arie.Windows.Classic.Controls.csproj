@@ -49,7 +49,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application.cs" />
+    <Compile Include="Core\Application.cs" />
     <Compile Include="Buttons\Button.cs" />
     <Compile Include="Buttons\PathButton.cs" />
     <Compile Include="Buttons\PathRadioButton.cs" />
@@ -72,6 +72,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Extensions\ColorSchemeExtensions.cs" />
+    <Compile Include="Text\TextBlock.cs" />
+    <Compile Include="Text\TextBox.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
