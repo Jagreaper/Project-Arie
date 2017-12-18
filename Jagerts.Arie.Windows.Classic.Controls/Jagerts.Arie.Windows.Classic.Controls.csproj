@@ -58,6 +58,7 @@
     <Compile Include="ComboBox\ToggleButton.cs" />
     <Compile Include="Converters\DrawingColorBrushConverter.cs" />
     <Compile Include="Converters\PathButtonPathSizeConverter.cs" />
+    <Compile Include="Lists\ListBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
