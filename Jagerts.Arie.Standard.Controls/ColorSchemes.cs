@@ -18,6 +18,8 @@ namespace Jagerts.Arie.Standard.Controls
 
         private static ColorScheme lightOrange;
 
+        private static ColorScheme lightGreen;
+
         private static ObservableCollection<ColorScheme> all;
 
         #endregion
@@ -34,6 +36,8 @@ namespace Jagerts.Arie.Standard.Controls
 
         public static ColorScheme LightOrange => ColorSchemes.lightOrange ?? (ColorSchemes.lightOrange = new LightOrangeColorScheme());
 
+        public static ColorScheme LightGreen => ColorSchemes.lightGreen ?? (ColorSchemes.lightGreen = new LightGreenColorScheme());
+
         public static ObservableCollection<ColorScheme> All => ColorSchemes.all ?? (ColorSchemes.all = ColorSchemes.CreateThemesList());
 
         #endregion
@@ -48,6 +52,7 @@ namespace Jagerts.Arie.Standard.Controls
                 ColorSchemes.LightBlue,
                 ColorSchemes.LightRed,
                 ColorSchemes.LightOrange,
+                ColorSchemes.LightGreen,
             };
         }
 
