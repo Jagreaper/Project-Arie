@@ -5,18 +5,18 @@ using System.Text;
 
 namespace Jagerts.Arie.Standard.Controls
 {
-    internal class ClassicBlueColorScheme : ColorScheme
+    internal class LightBlueColorScheme : ColorScheme
     {
         #region Constructor
 
-        public ClassicBlueColorScheme()
+        public LightBlueColorScheme()
         {
-            this.Name = "Classic Blue";
+            this.Name = "Light Blue";
             this.MainBackgroundBrush = Color.FromArgb(0xFF, 0xEE, 0xEE, 0xF2);
             this.MainBorderBrush = Color.FromArgb(0xFF, 0xF5, 0xF5, 0xF5);
             this.MainContentBrush = Color.FromArgb(0xFF, 0x00, 0x00, 0x00);
             this.HoverBackgroundBrush = Color.FromArgb(0xFF, 0x93, 0xC9, 0xFF);
-            this.HoverBorderBrush = Color.FromArgb(0xFF, 0x5B, 0xAD, 0xFF);
+            this.HoverBorderBrush = Color.FromArgb(0xFF, 0xB0, 0xD6, 0xFC);
             this.HoverContentBrush = Color.FromArgb(0xFF, 0x00, 0x00, 0x00);
             this.SelectedBackgroundBrush = Color.FromArgb(0xFF, 0x00, 0x7A, 0xCC);
             this.SelectedBorderBrush = Color.FromArgb(0xFF, 0x33, 0x99, 0xFF);

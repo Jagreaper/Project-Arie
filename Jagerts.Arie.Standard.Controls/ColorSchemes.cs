@@ -10,9 +10,9 @@ namespace Jagerts.Arie.Standard.Controls
     {
         #region Fields
         
-        private static ColorScheme classicDark;
+        private static ColorScheme darkGray;
 
-        private static ColorScheme classicBlue;
+        private static ColorScheme lightBlue;
 
         private static ColorScheme lightRed;
 
@@ -24,11 +24,11 @@ namespace Jagerts.Arie.Standard.Controls
 
         #region Properties
 
-        public static ColorScheme Default => ColorSchemes.ClassicDark;
+        public static ColorScheme Default => ColorSchemes.DarkGray;
         
-        public static ColorScheme ClassicDark => ColorSchemes.classicDark ?? (ColorSchemes.classicDark = new ClassicDarkColorScheme());
+        public static ColorScheme DarkGray => ColorSchemes.darkGray ?? (ColorSchemes.darkGray = new DarkGrayColorScheme());
 
-        public static ColorScheme ClassicBlue => ColorSchemes.classicBlue ?? (ColorSchemes.classicBlue = new ClassicBlueColorScheme());
+        public static ColorScheme LightBlue => ColorSchemes.lightBlue ?? (ColorSchemes.lightBlue = new LightBlueColorScheme());
 
         public static ColorScheme LightRed => ColorSchemes.lightRed ?? (ColorSchemes.lightRed = new LightRedColorScheme());
 
@@ -44,8 +44,8 @@ namespace Jagerts.Arie.Standard.Controls
         {
             return new ObservableCollection<ColorScheme>()
             {
-                ColorSchemes.ClassicDark,
-                ColorSchemes.ClassicBlue,
+                ColorSchemes.DarkGray,
+                ColorSchemes.LightBlue,
                 ColorSchemes.LightRed,
                 ColorSchemes.LightOrange,
             };

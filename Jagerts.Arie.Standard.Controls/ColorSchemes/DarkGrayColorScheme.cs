@@ -5,13 +5,13 @@ using System.Text;
 
 namespace Jagerts.Arie.Standard.Controls
 {
-    internal class ClassicDarkColorScheme : ColorScheme
+    internal class DarkGrayColorScheme : ColorScheme
     {
         #region Constructor
 
-        public ClassicDarkColorScheme()
+        public DarkGrayColorScheme()
         {
-            this.Name = "Classic Dark";
+            this.Name = "Dark Gray";
             this.MainBackgroundBrush = Color.FromArgb(0xFF, 0x66, 0x66, 0x66);
             this.MainBorderBrush = Color.FromArgb(0xFF, 0x55, 0x55, 0x55);
             this.MainContentBrush = Color.FromArgb(0xFF, 0xFF, 0xFF, 0xFF);
