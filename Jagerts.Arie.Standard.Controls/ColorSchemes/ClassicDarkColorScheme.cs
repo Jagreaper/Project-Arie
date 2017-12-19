@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Jagerts.Arie.Standard.Controls
 {
-    public class ClassicDarkColorScheme : ColorScheme
+    internal class ClassicDarkColorScheme : ColorScheme
     {
         #region Constructor
 

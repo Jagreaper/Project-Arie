@@ -9,10 +9,14 @@ namespace Jagerts.Arie.Standard.Controls
     public static class ColorSchemes
     {
         #region Fields
+        
+        private static ColorScheme classicDark;
 
         private static ColorScheme classicBlue;
 
-        private static ColorScheme classicDark;
+        private static ColorScheme lightRed;
+
+        private static ColorScheme lightOrange;
 
         private static ObservableCollection<ColorScheme> all;
 
@@ -21,10 +25,14 @@ namespace Jagerts.Arie.Standard.Controls
         #region Properties
 
         public static ColorScheme Default => ColorSchemes.ClassicDark;
+        
+        public static ColorScheme ClassicDark => ColorSchemes.classicDark ?? (ColorSchemes.classicDark = new ClassicDarkColorScheme());
 
         public static ColorScheme ClassicBlue => ColorSchemes.classicBlue ?? (ColorSchemes.classicBlue = new ClassicBlueColorScheme());
 
-        public static ColorScheme ClassicDark => ColorSchemes.classicDark ?? (ColorSchemes.classicDark = new ClassicDarkColorScheme());
+        public static ColorScheme LightRed => ColorSchemes.lightRed ?? (ColorSchemes.lightRed = new LightRedColorScheme());
+
+        public static ColorScheme LightOrange => ColorSchemes.lightOrange ?? (ColorSchemes.lightOrange = new LightOrangeColorScheme());
 
         public static ObservableCollection<ColorScheme> All => ColorSchemes.all ?? (ColorSchemes.all = ColorSchemes.CreateThemesList());
 
@@ -36,8 +44,10 @@ namespace Jagerts.Arie.Standard.Controls
         {
             return new ObservableCollection<ColorScheme>()
             {
-                ColorSchemes.ClassicBlue,
                 ColorSchemes.ClassicDark,
+                ColorSchemes.ClassicBlue,
+                ColorSchemes.LightRed,
+                ColorSchemes.LightOrange,
             };
         }
 

@@ -24,6 +24,8 @@ namespace Jagerts.Arie.Windows.Classic.Test.Viewmodels
 
         #region Properties
 
+        private int Index { get; set; }
+
         private ColorScheme ColorScheme { get; set; } = ColorSchemes.Default;
 
         public ICommand ToggleCommand { get; private set; }
@@ -42,10 +44,8 @@ namespace Jagerts.Arie.Windows.Classic.Test.Viewmodels
 
         public void Toggle()
         {
-            if (this.ColorScheme == ColorSchemes.ClassicDark)
-                (this.ColorScheme = ColorSchemes.ClassicBlue).Apply();
-            else if (this.ColorScheme == ColorSchemes.ClassicBlue)
-                (this.ColorScheme = ColorSchemes.ClassicDark).Apply();
+            this.Index = (this.Index + 1) % ColorSchemes.All.Count;
+            ColorSchemes.All[this.Index].Apply();
         }
 
         #endregion
