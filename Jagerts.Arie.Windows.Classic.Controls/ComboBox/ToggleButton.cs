@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jagerts.Arie.Standard.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,13 @@ namespace Jagerts.Arie.Windows.Classic.Controls
     {
         #region Constructor
 
-        static ToggleButton() => DefaultStyleKeyProperty.OverrideMetadata(typeof(ToggleButton), new FrameworkPropertyMetadata(typeof(ToggleButton)));
+        static ToggleButton()
+        {
+            if (!ColorSchemes.IsApplied)
+                ColorSchemes.Default.Apply();
+
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ToggleButton), new FrameworkPropertyMetadata(typeof(ToggleButton)));
+        }
 
         #endregion
 

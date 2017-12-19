@@ -37,6 +37,14 @@ namespace Jagerts.Arie.Standard.Controls
 
             Application.Current.Resources["ArieCheckedBorderBrush"] = ColorSchemeExtensions.ConvertFromColor(host.CheckedBorderBrush);
             Application.Current.Resources["ArieWindowBackgroundBrush"] = ColorSchemeExtensions.ConvertFromColor(host.WindowBackgroundBrush);
+
+            foreach (ColorScheme scheme in ColorSchemes.All)
+            {
+                if (scheme != host)
+                    scheme.IsApplied = false;
+                else if (host.IsApplied != true)
+                    host.IsApplied = true;
+            }
         }
 
         #endregion

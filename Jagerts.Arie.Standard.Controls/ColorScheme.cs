@@ -10,6 +10,8 @@ namespace Jagerts.Arie.Standard.Controls
     {
         #region Fields
 
+        private bool isApplied = false;
+
         private string name;
 
         private Color mainBackgroundBrush;
@@ -47,6 +49,12 @@ namespace Jagerts.Arie.Standard.Controls
         #endregion
 
         #region Properties
+
+        public bool IsApplied
+        {
+            get => this.isApplied;
+            set => this.Set(ref this.isApplied, value);
+        }
 
         public string Name
         {

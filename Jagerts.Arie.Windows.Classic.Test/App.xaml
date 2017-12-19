@@ -1,14 +1,9 @@
-﻿<controls:Application x:Class="Jagerts.Arie.Windows.Classic.Test.App"
+﻿<Application x:Class="Jagerts.Arie.Windows.Classic.Test.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Jagerts.Arie.Windows.Classic.Test"
              xmlns:controls="clr-namespace:Jagerts.Arie.Windows.Classic.Controls;assembly=Jagerts.Arie.Windows.Classic.Controls"
              StartupUri="MainWindow.xaml">
-    <controls:Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/Jagerts.Arie.Windows.Classic.Controls;component/Themes/Generic.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </controls:Application.Resources>
-</controls:Application>
+    <Application.Resources>
+    </Application.Resources>
+</Application>

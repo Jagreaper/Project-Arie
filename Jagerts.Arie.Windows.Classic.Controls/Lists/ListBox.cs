@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Jagerts.Arie.Standard.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,13 @@ namespace Jagerts.Arie.Windows.Classic.Controls
     {
         #region Constructor
 
-        static ListBox() => DefaultStyleKeyProperty.OverrideMetadata(typeof(ListBox), new FrameworkPropertyMetadata(typeof(ListBox)));
+        static ListBox()
+        {
+            if (!ColorSchemes.IsApplied)
+                ColorSchemes.Default.Apply();
+
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ListBox), new FrameworkPropertyMetadata(typeof(ListBox)));
+        }
 
         #endregion
     }

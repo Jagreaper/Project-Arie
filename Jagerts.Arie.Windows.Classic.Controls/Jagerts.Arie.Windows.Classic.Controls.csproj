@@ -49,7 +49,6 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Application.cs" />
     <Compile Include="Buttons\Button.cs" />
     <Compile Include="Buttons\PathButton.cs" />
     <Compile Include="Buttons\PathRadioButton.cs" />

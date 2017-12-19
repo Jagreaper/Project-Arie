@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Jagerts.Arie.Standard.Controls;
+using System.Windows;
 using System.Windows.Media;
 
 namespace Jagerts.Arie.Windows.Classic.Controls
@@ -7,7 +8,13 @@ namespace Jagerts.Arie.Windows.Classic.Controls
     {
         #region Constructor
 
-        static PathButton() => DefaultStyleKeyProperty.OverrideMetadata(typeof(PathButton), new FrameworkPropertyMetadata(typeof(PathButton)));
+        static PathButton()
+        {
+            if (!ColorSchemes.IsApplied)
+                ColorSchemes.Default.Apply();
+
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(PathButton), new FrameworkPropertyMetadata(typeof(PathButton)));
+        }
 
         #endregion
 

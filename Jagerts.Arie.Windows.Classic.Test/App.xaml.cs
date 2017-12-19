@@ -13,7 +13,7 @@ namespace Jagerts.Arie.Windows.Classic.Test
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : Controls.Application
+    public partial class App : Application
     {
         // Skip
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
@@ -27,7 +28,9 @@ namespace Jagerts.Arie.Standard.Controls
         #endregion
 
         #region Properties
-        
+
+        public static bool IsApplied => ColorSchemes.All.Where(c => c.IsApplied).Count() > 0;
+
         public static ObservableCollection<ColorScheme> All => ColorSchemes.all ?? (ColorSchemes.all = ColorSchemes.CreateThemesList());
 
         public static ColorScheme Default => ColorSchemes.DarkGray;

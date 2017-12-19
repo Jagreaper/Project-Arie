@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Jagerts.Arie.Standard.Controls;
+using System.Windows;
 
 namespace Jagerts.Arie.Windows.Classic.Controls
 {
@@ -6,7 +7,13 @@ namespace Jagerts.Arie.Windows.Classic.Controls
     {
         #region Constructor
 
-        static TextBlock() => DefaultStyleKeyProperty.OverrideMetadata(typeof(TextBlock), new FrameworkPropertyMetadata(typeof(TextBlock)));
+        static TextBlock()
+        {
+            if (!ColorSchemes.IsApplied)
+                ColorSchemes.Default.Apply();
+
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(TextBlock), new FrameworkPropertyMetadata(typeof(TextBlock)));
+        }
 
         #endregion
     }
