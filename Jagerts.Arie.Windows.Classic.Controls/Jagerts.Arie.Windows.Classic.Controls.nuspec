@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Jagerts.Arie.Windows.Classic.Controls</id>
-    <version>0.0.17</version>
+    <version>0.0.19</version>
     <title>Jagerts.Arie.Windows.Classic.Controls</title>
     <authors>James Grant</authors>
     <owners>James Grant</owners>
@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
     <releaseNotes>
-      Fixed ListBoxItem template padding glitch
+      Added another hotfix for padding issues with the ListBoxItem Style
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>application app ui interface controls wpf Jagerts Arie Jagerts.Arie.Windows.Classic.Controls</tags>
