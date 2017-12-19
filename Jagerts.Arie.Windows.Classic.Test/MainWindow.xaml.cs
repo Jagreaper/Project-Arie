@@ -1,4 +1,4 @@
-﻿using Jagerts.Arie.Windows.Classic.Test.Viewmodels;
+﻿using Jagerts.Arie.Windows.Classic.Test.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
