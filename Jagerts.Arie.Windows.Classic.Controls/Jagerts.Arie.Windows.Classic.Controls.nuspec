@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A user interface controls library for WPF</description>
     <releaseNotes>
-      Fixed glitch which prevented the ArieListBoxItem style not working with Item Templates
+      Fixed ListBoxItem template padding glitch
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>application app ui interface controls wpf Jagerts Arie Jagerts.Arie.Windows.Classic.Controls</tags>
